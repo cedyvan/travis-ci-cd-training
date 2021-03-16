@@ -6,7 +6,7 @@ before_install:
   - docker build -t tempDockerReact -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true tempDockerReact npm run test
+  - docker run -e CI=true tempdockerreact npm run test
 
 deploy:
   provider: elasticbeanstalk
